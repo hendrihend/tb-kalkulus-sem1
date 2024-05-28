@@ -266,7 +266,11 @@ footer {
         margin: auto;
         display: block;
     }
-    .container .row .btn-mode { margin-left: 3.5rem; }
+    .container .row .btn-mode { 
+        width: 29%;
+        padding: .2rem;
+        margin-left: 3.5rem; 
+    }
     .content {
         flex-direction: column;
         padding: .5rem;
