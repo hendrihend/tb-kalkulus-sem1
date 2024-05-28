@@ -262,12 +262,12 @@ footer {
 
     .container {margin: 1.5rem;}
     .container .row {
-        width: 50%;
-        margin: auto;
-        display: block;
+        width: 100%;
+        display: inline;
     }
     .container .row .btn-mode { 
-        margin-left: 3.45rem; 
+        margin: auto;
+        display: block;
     }
     .content {
         flex-direction: column;
