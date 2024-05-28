@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar Kalkulus Semester</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <!-- Navbar Start -->
+    <nav id="nav">
+        <div class="navbar-container">
+            <h3>Tugas Besar Kalkulus Semester 1 2024</h3>
+        </div>
+        <ul>
+            <li class="li-1"></li>
+            <li class="li-2"></li>
+            <li class="li-3"></li>
+        </ul>
+        <button class="btn-mode btn-mode-nav" id="btnDarkMode" onclick="modeBtn()">&#9788;</button>
+    </nav>
+    <!-- Navbar End -->
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="li-1"></li>
+                <li class="li-2"></li>
+                <li class="li-3"></li>
+            </ul>
+            <button class="btn-mode" id="btnDarkModeContentMobile" onclick="modeBtn()">&#9788;</button>
+        </div>
+        <div class="content">
+            <div class="row" id="row">
+                <form action="" class="form-persamaan" id="forms" onsubmit="return false">
+                    <h3>Mencari Persamaan Linear</h3>
+                    <input type="text" id="a" class="tv" placeholder="nilai a">
+                    <input type="text" id="b" class="tv" placeholder="nilai b">
+                    <button type="submit" id="showValue">Hitung</button>
+                </form>
+                <div class="hasil output">
+                    <p>Hasil: <br><span id="hasil"></span></p>
+                </div>
+            </div>
+            <div class="row-jangkar">
+                <img src="img/jangkar.png" alt="img/jangkar.png" class="jangkar jang1">
+                <img src="img/jangkar.png" alt="img/jangkar.png" class="jangkar jang2">
+            </div>
+            <div class="row" id="row2">
+                <form action="" onsubmit="return false">
+                    <h3>Mencari Pertidaksamaan Linear</h3>
+                    <input type="text" id="aa" class="sv" placeholder="nilai a">
+                    <input type="text" id="bb" class="sv" placeholder="nilai b">
+                    <input type="text" id="cc" class="sv" placeholder="nilai c">
+                    <input type="text" id="dd" class="sv" placeholder="nilai d">
+                    <button type="submit" id="showValue2">Hitung</button>
+                </form>
+                <div class="hasil output2">
+                    <p>Hasil: <br><span id="hasil2"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 || 411232047 Hendri Gunawan</p>
+    </footer>
+
+    <!-- my script -->
+    <script src="main.js"></script>
+</body>
+</html>
