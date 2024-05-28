@@ -267,9 +267,12 @@ footer {
         display: block;
     }
     .container .row .btn-mode { 
-        width: 29%;
-        padding: .2rem;
-        margin-left: 3.5rem; 
+        border-radius: 100%;
+        border: navajowhite;
+        font-size: xx-large;
+        background-color: rgb(0, 0, 20);
+        color: antiquewhite;
+        margin-left: 3.45rem; 
     }
     .content {
         flex-direction: column;
