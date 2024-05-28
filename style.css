@@ -70,10 +70,11 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
 }
 .container {
     box-shadow: 0 0 7px 0 black;
-    margin: .5rem;
+    margin: 1rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    padding: 7rem;
 }
 /* traffic lights dan btn mode didalam container row */
 .container .row {
@@ -133,7 +134,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
 
 /* content di dalam container */
 .content {
-    min-height: 78vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -260,20 +260,17 @@ footer {
     }
     nav ul { margin: auto; }
 
-    .container {margin: 1.5rem;}
+    .container {
+        margin: 1.5rem;
+        padding: 0;
+    }
     .container .row {
-        width: 50%;
-        margin: auto;
-        display: block;
+        width: 100%;
+        display: inline;
     }
     .container .row .btn-mode { 
-        border-radius: 100%;
-        border: navajowhite;
-        font-size: xx-large;
-        background-color: rgb(0, 0, 20);
-        color: antiquewhite;
-        margin-left: 3.45rem;
-
+        margin: auto;
+        display: block;
     }
     .content {
         flex-direction: column;
