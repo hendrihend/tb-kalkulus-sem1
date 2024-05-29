@@ -270,7 +270,7 @@ footer {
         width: 100%;
         display: inline;
     }
-    .container .row .btn-mode { 
+    .container .row .btn-mode-mobile { 
         margin: auto;
         display: block;
         font-size: xx-large;
