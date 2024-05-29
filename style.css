@@ -274,7 +274,8 @@ footer {
         margin: auto;
         display: block;
         font-size: xx-large;
-        width: 13%;
+        border: navajowhite;
+        border-radius: 100%;
     }
     .content { 
         flex-direction: column; 
