@@ -277,7 +277,7 @@ footer {
         margin: auto;
         display: block;
         font-size: large;
-        width: 8%;
+        padding: .3rem;
     }
     .content { 
         flex-direction: column; 
