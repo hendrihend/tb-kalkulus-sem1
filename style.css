@@ -1,6 +1,8 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+body {
     font-family: sans-serif;
     letter-spacing: .1rem;
     transition: .5s;
@@ -243,6 +245,9 @@ footer {
     .container {
         justify-content: center;
     }
+    .content {
+        min-height: 85vh;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 540px), 
@@ -257,19 +262,22 @@ footer {
     nav ul, .btn-mode-nav {
         display: none;
     }
-    nav ul { margin: auto; }
+    .container .row ul { 
+        margin-left: 3.1rem; 
+    }
 
     .container {
         margin: 1.5rem;
     }
     .container .row {
-        width: 50%;
+        width: 100%;
         display: inline;
     }
     .container .row .btn-mode { 
         margin: auto;
         display: block;
-        font-size: 2rem;
+        font-size: large;
+        width: 8%;
     }
     .content { 
         flex-direction: column; 
