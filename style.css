@@ -270,13 +270,12 @@ footer {
         width: 100%;
         display: inline;
     }
-    .container .row .btn-mode-mobile { 
+    .container .row .btn-mode { 
         margin: auto;
         display: block;
         font-size: xx-large;
         border: navajowhite;
         border-radius: 100%;
-        opacity: 0.5;
     }
     .content { 
         flex-direction: column; 
