@@ -261,10 +261,9 @@ footer {
 
     .container {
         margin: 1.5rem;
-        padding: 0;
     }
     .container .row {
-        width: 100%;
+        width: 50%;
         display: inline;
     }
     .container .row .btn-mode { 
