@@ -10,17 +10,6 @@ function dis(a,b) {
     // console.log(a,b);
 }
 
-// function btnNumber(event) {
-//     if (event.key == '0' || event.key == '1' 
-//     || event.key == '2' || event.key == '3' 
-//     || event.key == '4' || event.key == '5' 
-//     || event.key == '6' || event.key == '7' 
-//     || event.key == '8' || event.key == '9' 
-//         )
-//         document.getElementById("a").value = event.key;
-//         document.getElementById("b").value = event.key;
-// }
-
 for(var i =0; i< classSrc.length; i++){
     var singleClass = classSrc[i];
 
@@ -43,10 +32,10 @@ showValue.onclick = function(e){
         var steps = "";
         var sign = b < 0 ? "" : "+";
 
-        steps += "⇔ " + " "+ a +"x "+ sign +" "+ b +"  = 0 \n";
-        steps += "⇔ " + " "+ a +"x " + " = " + -b + "\n";
-        steps += "⇔ " + " "+ "x = " + -b + " / " + a + "\n";
-        steps += "⇔ " + " "+ "x = " + -b / a;
+        steps += "⇔ " + " "+ a +"𝓍 "+ sign +" "+ b +"  = 0 \n";
+        steps += "⇔ " + " "+ a +"𝓍 " + " = " + -b + "\n";
+        steps += "⇔ " + " "+ "𝓍 = " + -b + " / " + a + "\n";
+        steps += "⇔ " + " "+ "𝓍 = " + -b / a;
         console.log(steps);
         document.getElementById("hasil").innerText = steps;
         var output = document.querySelector(".output");
@@ -87,9 +76,9 @@ showValue2.onclick = function(e) {
         var stepss = "";
         var signs = bb < 0 ? "" : "+";
 
-        stepss += "⇔ "+ aa + "x " + signs + " " + bb + " > " + cc + "(x - " + dd + ")\n";
-        stepss += "⇔ "+ aa + "x " + signs + " " + bb + " > " + cc + "x - " + cd + "\n";
-        stepss += "⇔ "+ cd + " " + signs + " " + bb + " > " + cc + "x - " + aa + "x\n";
+        stepss += "⇔ "+ aa + "𝓍 " + signs + " " + bb + " > " + cc + "(𝓍 - " + dd + ")\n";
+        stepss += "⇔ "+ aa + "𝓍 " + signs + " " + bb + " > " + cc + "𝓍 - " + cd + "\n";
+        stepss += "⇔ "+ cd + " " + signs + " " + bb + " > " + cc + "𝓍 - " + aa + "𝓍\n";
         stepss += "⇔ "+ finalResultLeft + " > " + ca + "\n";
         console.log(stepss);
         document.getElementById("hasil2").innerText = stepss;
