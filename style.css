@@ -7,7 +7,6 @@ body {
     letter-spacing: .1rem;
     transition: .5s;
 }
-
 nav {
     width: 100%;
     background-color: cadetblue;
@@ -15,6 +14,7 @@ nav {
     justify-content: space-around;
     transition: .5s;
 }
+nav .navbar-container { margin: 1.5rem; }
 .dark-mode {
     background-color: rgb(0, 0, 20);
     color: burlywood;
@@ -23,8 +23,10 @@ nav {
 nav .btn-mode {
     border-radius: 100%;
     border: navajowhite;
+    outline: none;
     font-size: xx-large;
     width: 4%;
+    margin: .5rem;
     cursor: pointer;
     background-color: rgb(0, 0, 20);
     color: antiquewhite;
@@ -36,13 +38,13 @@ nav .btn-dark-mode {
     transition: 1s;
 }
 nav ul {
-    width: 10%;
+    width: 20%;
     display: flex;
     justify-content: space-evenly;
     border-radius: 1rem;
+    margin: 1rem;
 }
 nav ul li { font-size: 2.3rem; }
-
 nav ul .li-1 { animation: li-1-animate 3s infinite; }
 @keyframes li-1-animate {
     0% {opacity: 0;}
@@ -52,7 +54,6 @@ nav ul .li-1 { animation: li-1-animate 3s infinite; }
     75% {opacity: 0;}
     100% {opacity: 0;}
 }
-
 nav ul .li-2 { animation: li-2-animate 3s infinite; }
 @keyframes li-2-animate {
     0% {opacity: 0;}
@@ -62,7 +63,6 @@ nav ul .li-2 { animation: li-2-animate 3s infinite; }
     85% {opacity: 0;}
     100% {opacity: 0;}
 }
-
 nav ul .li-3 { animation: li-3-animate 3s infinite; }
 @keyframes li-3-animate {
     0% {opacity: 0; }
@@ -71,6 +71,7 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
     75% {opacity: 1; color: green; }
     100% {opacity: 0; }
 }
+
 .container {
     box-shadow: 0 0 7px 0 black;
     margin: 1rem;
@@ -98,7 +99,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
     75% {opacity: 0;}
     100% {opacity: 0;}
 }
-
 .container .row ul .li-2 { animation: li-2-animate 3s infinite; }
 @keyframes li-2-animate {
     0% {opacity: 0;}
@@ -108,7 +108,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
     85% {opacity: 0;}
     100% {opacity: 0;}
 }
-
 .container .row ul .li-3 { animation: li-3-animate 3s infinite; }
 @keyframes li-3-animate {
     0% {opacity: 0; }
@@ -117,7 +116,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
     75% {opacity: 1; color: green; }
     100% {opacity: 0; }
 }
-
 .container .row .btn-mode {
     border-radius: 100%;
     border: none;
@@ -147,7 +145,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
     width: 35%;
     box-shadow: 0 0 7px 0 black;
 }
-
 .containers { box-shadow: 0 0 7px 0 white; }
 .content .rows {
     background-color: rgb(0, 0, 20);
@@ -169,7 +166,6 @@ nav ul .li-3 { animation: li-3-animate 3s infinite; }
 .content .row-jangkar .jang1 { transform: rotate(180deg); }
 .content .row-jangkar:hover > .jang1 { transform: rotate(-360deg); }
 .content .row-jangkar:hover > .jang2 { transform: rotate(-540deg); }
-
 .content .row h3, p, form, .hasil { margin: .5rem; }
 .content .row h3 { text-align: center; }
 .content .row form {
@@ -193,11 +189,10 @@ input[type=text] { text-align: center; }
     width: 97%;
     outline: none;
 }
-
 .content .row button {
-    height: 2em;
     border-radius: .5rem;
-    margin: auto;
+    margin: .7rem auto;
+    padding: .7em;
     border: navajowhite;
     cursor: pointer;
     transition: .5s all;
@@ -208,9 +203,7 @@ input[type=text] { text-align: center; }
     color: white;
     box-shadow: 0 0 7px 0 blue;
 }
-.content .row form input, button {
-    margin: .3em;
-}
+.content .row form input { margin: .3rem; }
 .content .row .hasil {
     box-shadow: 0 0 7px 0 black;
     border-radius: 1rem;
@@ -242,33 +235,24 @@ footer {
         margin: .5rem;
         text-align: center;
     }
-    .container {
-        justify-content: center;
-    }
-    .content {
-        min-height: 85vh;
-    }
+    .container { justify-content: center; }
+    .content { min-height: 85vh; }
 }
 /* Mobile */
 @media screen and (max-width: 540px), 
 (max-width: 430px), (max-width: 412px), 
 (max-width: 360px) {
     nav { flex-direction: column; }
-    nav .navbar-container, ul {
-        margin: .5rem;
+    nav .navbar-container {
+        margin: 1.5rem auto;
         text-align: center;
+        font-size: small;
     }
     nav .navbar-container { order: 2; }
-    nav ul, .btn-mode-nav {
-        display: none;
-    }
-    .container .row ul { 
-        margin-left: 3.1rem; 
-    }
+    nav ul, .btn-mode-nav { display: none; }
+    .container .row ul { margin-left: 3.1rem; }
 
-    .container {
-        margin: 1.5rem;
-    }
+    .container { margin: 1.5rem; }
     .container .row {
         width: 100%;
         display: inline;
